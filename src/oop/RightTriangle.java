@@ -9,6 +9,7 @@ public RightTriangle(){
 }
 public RightTriangle(double base, double height){
 }
+
 	public double hypot(){
 		return Math.hypot(height, base);
 	}

@@ -3,9 +3,12 @@ package oop;
 public class Circle {
 private double radius;
 public Circle(){
-radius=0;
+radius=3;
 }
 public Circle(double radius){
+	if (radius<= 0){
+		radius= 10;
+	}
 }
 public double getRadius(){
 	return radius;
