@@ -5,9 +5,12 @@ private double radius;
 public Circle(){
 radius=3;
 }
-public Circle(double radius){
-	if (radius<= 0){
+public Circle(double xradius){
+	if (xradius<= 0){
 		radius= 10;
+	}
+	else{
+		radius=xradius;
 	}
 }
 public double getRadius(){

@@ -7,7 +7,17 @@ public RightTriangle(){
 	base=2;
 	height=2;
 }
-public RightTriangle(double base, double height){
+public RightTriangle(double xbase, double xheight){
+	if(xbase<0){
+		base=10;
+	}else{
+		xbase=base;
+	}
+	if(xheight<0){
+		height=10;
+	}else{
+		xheight=height;
+	}
 }
 
 	public double hypot(){

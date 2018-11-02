@@ -9,7 +9,6 @@ public class CircleTest {
 		double firstRadius = 0;
 
 		do {
-			double largest = 0;
 			Scanner input = new Scanner(System.in);
 			System.out.println("Enter the radius for the first circle (9999 to quit)");
 			firstRadius = input.nextDouble();
@@ -23,16 +22,18 @@ public class CircleTest {
 			double oneArea = one.getArea();
 			double twoArea = two.getArea();
 			double threeArea = three.getArea();
+			double largest = 4;
 			if (oneArea >= largest) {
-				largest = oneArea;
+				largest = largest + oneArea;
 				if (twoArea >= largest) {
-					largest = twoArea;
+					largest = largest + twoArea;
 					if (threeArea >= largest) {
-						largest = threeArea;
-						System.out.println(largest);
+						largest = largest + threeArea;
+
 					}
 				}
 			}
+			System.out.println("The area of the largest circle is: " +largest);
 		} while (firstRadius != 999);
 
 	}
