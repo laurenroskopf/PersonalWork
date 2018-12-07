@@ -1,32 +1,31 @@
 package arrays;
 
 public class Rectangle {
-	private double length;
-	private double width;
+	private int length;
+	private int width;
 	public Rectangle(){
 	length= 0;
 	width= 0; 
 	}
-	public Rectangle (double xlength, double xwidth){
-		xlength= length;
-		xwidth=width;
+	public Rectangle (int xlength, int xwidth){
+		length=xlength;
+		width=xwidth;
 	}
-		public double getLength(){
+		public int getLength(){
 			return length;
-		}
-		public double getWidth(){
+		}public int getWidth(){
 			return width;
 		}
-		public double getPerimeter(){
+		public int getPerimeter(){
 			return (length+ length+ width+ width);
 		}
-		public double getArea(){
+		public int getArea(){
 			return (length*width);
 		}
-		public void changeLength(double newLength){
+		public void changeLength(int newLength){
 			length=newLength;
 		}
-		public void changeWidth(double newWidth){
+		public void changeWidth(int newWidth){
 			width=newWidth;
 		}
 }
